@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="assets/css-reset/Normalize(reset).rtf"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Metamorphous|Montserrat+Alternates" rel="stylesheet">
+    <script src="assets/jquery/jquery-comp.js"></script>
+    <title>Trivia Game</title>
+</head>
+<body>
+    <div id="bg">
+        <div id="gamecontainer" class="layout">
+            <div id="game-tittle" class="layout">
+                    <h1 class="title layout">Game of Thrones</h1>
+                    <h3 class="title layout">trivia game</h3>
+                    <button id="start-game" class="layout"><h3>Start</h3></button>
+            </div>
+
+
+
+            <div id="trivia" class="layout">
+                <h4 class="trivia-text">Time Left: <span id="time-left" class="trivia-text">30</span></h4>
+                <p id="question-section" class="trivia-text"></p>
+                <ul>
+                    <li id="a1" class="trivia-text"></li>
+                    <li id="a2" class="trivia-text"></li>
+                    <li id="a3" class="trivia-text"></li>
+                    <li id="a4" class="trivia-text"></li>
+                </ul>
+            </div>
+
+            <div id="trivia-end">
+                <h2 class="trivia-text">Its Done</h2>
+
+                <ul class="layout">
+                    <li id="correct-answer" class="trivia-text"></li>
+                    <li id="incorrect-answers" class="trivia-text"></li>
+                    <li id="unanswered" class="trivia-text"></li>
+                </ul>
+
+                <img id="image-j" src=""/>
+
+                <div class="layout">
+                <button id="try-again"><h3>Try Again</h3></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    <script  src="assets/javascript/app.js"></script>
+</body>
+</html>
