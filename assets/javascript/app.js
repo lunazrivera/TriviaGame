@@ -122,7 +122,7 @@ function stop() {
     endTrivia();
 }
 function triviaStart() {
-    
+    // console.log(questionRotation, questionRotation === 6)
     if (questionRotation !== 6) {
     $("#question-section").text(questions[questionRotation].question);
     $("#a1").text(questions[questionRotation].a1);
@@ -137,22 +137,22 @@ function triviaStart() {
 
 }
 function compareAnswer() {
-
+    // console.log(questionRotation, questions[questionRotation]);
         if (questionHolder === questions[questionRotation].correct) {
-            questionsTried--
+            questionsTried--;
             questionRotation++;
             correctAnswer++
             triviaStart();
         } 
         else {
-            questionsTried--
+            questionsTried--;
             questionRotation++;
             incorrectAnswer++
             triviaStart();
         }
 }
 function endTrivia() {
-    if (correctAnswer < 4){
+    if (correctAnswer <= 4){
         $("#bg").css("backgroundImage", "url(assets/images/bronn-loss.jpg)");
         $("#trivia").css("display", "none");
         $("#trivia-end").css("display", "inline-block");
